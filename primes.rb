@@ -25,11 +25,14 @@ class Primes
     unless @all
       if @size <= @first_54_primes.length
         @all = @first_54_primes.take(@size)
+      else
+        @all = []
+        # @bitarray = BitArray.new(n+1)
       end
     end
   end
 
-  def sieve_of_atkin
+  def sieve_of_eratosthenes
   end
 
 
