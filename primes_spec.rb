@@ -16,4 +16,9 @@ describe Primes do
     primes.compute
     expect(primes.all).to eq([2])
   end
+  it "Works slightly less trivially" do
+    primes = Primes.new(2)
+    primes.compute
+    expect(primes.all).to eq([2, 3])
+  end
 end
