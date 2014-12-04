@@ -13,6 +13,7 @@ describe Primes do
   end
   it "Works trivially" do
     primes = Primes.new(1)
-    expect(primes).to eq([2])
+    primes.compute
+    expect(primes.all).to eq([2])
   end
 end

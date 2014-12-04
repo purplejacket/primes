@@ -20,4 +20,17 @@ class Primes
       (n * (Math.log(n) + Math.log(Math.log(n)) + 2)).ceil
     end
   end
+
+  def compute
+    unless @all
+      if @size <= @first_54_primes.length
+        @all = @first_54_primes.take(@size)
+      end
+    end
+  end
+
+  def sieve_of_atkin
+  end
+
+
 end
