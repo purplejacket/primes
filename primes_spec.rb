@@ -17,15 +17,27 @@ describe Primes do
     expect(primes.all).to eq([2])
   end
   it "Works slightly less trivially" do
-    primes = Primes.new(2)
+    primes = Primes.new(5)
     primes.compute
-    expect(primes.all).to eq([2, 3])
+    expect(primes.all).to eq([2, 3, 5, 7, 11])
   end
   it "Can compute the first 100 primes (spot check these)" do
     primes = Primes.new(100)
     primes.compute
+
+    expect(primes.all[0]).to eq(2)
+    expect(primes.all[1]).to eq(3)
+    expect(primes.all[2]).to eq(5)
     expect(primes.all[60]).to eq(283)
     expect(primes.all[99]).to eq(541)
+
+    expect(primes.all.length).to eq(100)
+  end
+  it "Can compute the first 100,000 primes (check the last one)" do
+    primes = Primes.new(100000)
+    primes.compute
+
+    expect(primes.all[99999]).to eq(1299709)
   end
 
 
