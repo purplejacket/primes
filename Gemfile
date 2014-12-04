@@ -1,3 +1,3 @@
-ruby "2.0.0", :patchlevel => "353"
+ruby "2.1.5"
 
 gem "rspec", "3.1.0"
