@@ -1,0 +1,1 @@
+The Primes class uses the Sieve of Eratosthenes to calculate up to the nth prime.  It is somewhat optimized in that is uses a BitArray for the sieve.  Also, the BitArray is sized large enough to contain n primes, hopefully without being too too big.  There's also a script that will show a table of primes and prime squares.
